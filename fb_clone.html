@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fb_clone.css">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+        </style>
+    <script src="https://kit.fontawesome.com/93e4961fc3.js" crossorigin="anonymous"></script>
+    <title>FB_clone</title>
+</head>
+<body>
+        <nav>
+            <div class="left-nv">
+               <!-- <img src="./socialbook_img/logo.png" class="logo"> -->
+                  <ul>
+                    <li><a href=""><img src="./socialbook_img/notification.png" alt="notification"></a></li>
+                    <li><a href=""><img src="./socialbook_img/inbox.png" alt="inbox"></a></li>
+                    <li><a href=""><img src="./socialbook_img/video.png" alt="video"></a></li>
+                  </ul>
+            </div>
+            <div class="right-nv">
+              <div class="text-box">
+                <h1> A K V</h1>
+              </div>
+              <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="socialbook_img/profile.png" >
+              </div> 
+              <div id="dark-btn" onclick="dark-btn-on" >
+                <span id="dark-btn-span"></span>
+              </div>     
+            </div>
+            <!----------------- seting-menu -------------------------->
+            <div class="setting-menu"> 
+              <div class="setting-menu-inner">
+                <div class="user-profile">
+                  <img src="./socialbook_img/profile-pic.png" alt="">
+                  <div>
+                    <p>Kalluaa</p>
+                    <a href="">See Your Profile</a>
+                  </div>
+                </div> 
+                <br> <hr> <br>
+                <div class="user-profile">
+                  <img src="./socialbook_img/feedback.png" alt="">
+                  <div>
+                    <p>Give Feedback</p>
+                    <a href="">Help us to improve the new design</a>
+                  </div>
+                </div>
+                <br> <hr> <br>
+                   
+                 <div class="setting-links">
+                  <img src="./socialbook_img/setting.png" class="setting-icon">
+                  <a href="#">Setting & Privacy <img src="./socialbook_img/arrow.png" width="10px"> </a>
+                 </div>   
+                 <div class="setting-links">
+                  <img src="./socialbook_img/help.png" class="setting-icon">
+                  <a href="#">Help & Support <img src="./socialbook_img/arrow.png" width="10px"> </a>
+                 </div>   
+                 <div class="setting-links">
+                  <img src="./socialbook_img/display.png" class="setting-icon">
+                  <a href="#">Display & Accessibility<img src="./socialbook_img/arrow.png" width="10px"> </a>
+                 </div>   
+                 <div class="setting-links">
+                  <img src="./socialbook_img/logout.png" class="setting-icon">
+                  <a href="#">Logout<img src="./socialbook_img/arrow.png" width="10px"> </a>
+                 </div>   
+                 
+              </div>
+            </div>
+
+        </nav>
+        <div class="search-bar">
+          <i id="search-icon" class="fa-solid fa-magnifying-glass "></i>
+          <input type="text" >
+        </div>
+
+        <div  class="container">
+
+          <!-------------------- left-sidebar -------------------------->
+          
+          <div class="left-sidebar">
+                <div class="imp-links">
+                  <a href=""><img src="./socialbook_img/news.png" alt="">Latest News</a>
+                  <a href=""><img src="./socialbook_img/friends.png" alt="">Friends</a>
+                  <a href=""><img src="./socialbook_img/group.png" alt="">Group</a>
+                  <a href=""><img src="./socialbook_img/marketplace.png" alt="">Marketplace</a>
+                  <a href=""><img src="./socialbook_img/watch.png" alt="">Watch</a>
+                  <a href="">See More</a>
+                </div>
+                <hr>
+                <br>
+                <div class="shortcut-links">
+                  <p>Your Shortcut</p> <br>
+                  <a href=""><img src="./socialbook_img/shortcut-1.png" alt=""> Web developer</a>
+                  <a href=""><img src="./socialbook_img/shortcut-2.png" alt=""> Web Design Course</a>
+                  <a href=""><img src="./socialbook_img/shortcut-3.png" alt=""> Full stack Development</a>
+                  <a href=""><img src="./socialbook_img/shortcut-4.png" alt=""> Website Esports</a>
+                </div>
+            </div>
+
+             <!---------------------- main-content ----------------------------->
+
+            <div class="main-content">
+              
+              <div class="story-gallary">
+                <div class="story story1">
+                  <img src="./socialbook_img/upload.png" >
+                  <p> Post Story</p>
+                </div>
+                <div class="story story2">
+                  <img src="./socialbook_img/member-1.png" >
+                  <p> Dhanno</p>
+                </div>
+                <div class="story story3">
+                  <img src="./socialbook_img/member-2.png" >
+                  <p> Shamba</p>
+                </div>
+                <div class="story story4">
+                  <img src="./socialbook_img/member-3.png" >
+                  <p> Mahira </p>
+                </div>
+
+                <div class="story story5">
+                  <img src="./socialbook_img/member-4.png" >
+                  <p> Munmun</p>
+                </div>
+              </div>
+ 
+              <div class="write-post-container">
+
+                <div class="user-profile">
+                  <img src="./socialbook_img/profile-pic.png" alt="">
+                  <div>
+                    <p>Kalluaa</p>
+                    <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                  </div>
+                </div>
+                    
+                <div class="post-input-container">
+                  <textarea rows="3" placeholder="What's on your mind john?" ></textarea>
+
+                  <div class="add-post-link">
+                      <a href="#"><img src="./socialbook_img/live-video.png" > Live Video</a>
+                      <a href="#"><img src="./socialbook_img/photo.png" > Photos/Video</a>
+                      <a href="#"><img src="./socialbook_img/feeling.png" > Feeling/Activity</a>
+                  </div> 
+                </div>              
+              </div>
+
+              <div class="post-container">
+                <div class="post-row">
+                  <div class="user-profile">
+                    <img src="./socialbook_img/profile-pic.png" alt="">
+                    <div> 
+                      <p>Kalluaa <span>is Feeling &nbsp;<i class="fa-solid fa-circle-radiation"></i> &nbsp;LiveLong with </span>Dawud Bhai <span>and </span>200 others <span>in </span>Karachi. </p>
+                      <span>30 Aug 2022 at 15:27</span>
+                    </div>
+                  </div>
+                  <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post-content">Today is my Birthday. Happy Birthday To me! <br> <a href="">#bhai_ka_Bday</a> </p>
+                  <img src="./socialbook_img/_.jpeg" class="post-img">
+  
+                  <div class="post-row"> 
+                    <div class="activity-icon"> 
+                        <div><img src="./socialbook_img/like-blue.png" >120</div>  
+                        <div><img src="./socialbook_img/comments.png" >36</div>   
+                        <div><img src="./socialbook_img/share.png" >3</div>   
+                    </div> 
+                    <div class="post-profile-icon"> 
+                        <img src="./socialbook_img/profile-pic.png" >
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div> 
+                  </div>  
+
+              </div> 
+
+              <div class="post-container">
+                <div class="post-row">
+                  <div class="user-profile">
+                    <img src="./socialbook_img/member-3.png" >
+                    <div> 
+                      <p>Mahira Khandal <span>is Feeling Exited. </span> </p>
+                      <span>12 hr</span>
+                    </div>
+                  </div>
+                  <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post-content">Hello Friends! Lo Samundar Kinare Ghum Lo <a href="">#masti #full_enjoyment
+                  #kaira_advani #superstar <br> #bollywood #mahakal_ke_bhakt </a></p>
+                  <img src="./socialbook_img/feed-image-2.png" class="post-img">
+  
+                  <div class="post-row"> 
+                    <div class="activity-icon"> 
+                        <div><img src="./socialbook_img/like.png" >50</div>  
+                        <div><img src="./socialbook_img/comments.png" >6</div>   
+                        <div><img src="./socialbook_img/share.png" >0</div>   
+                    </div> 
+                    <div class="post-profile-icon"> 
+                        <img src="./socialbook_img/member-3.png" >
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div> 
+                  </div>  
+
+              </div> 
+              <div class="post-container">
+                <div class="post-row">
+                  <div class="user-profile">
+                    <img src="./socialbook_img/member-7.png" alt="">
+                    <div> 
+                      <p>Jatin Kumar</p>
+                      <span>25 Aug 2022 at 01:34</span>
+                    </div>
+                  </div>
+                  <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                  <img src="./socialbook_img/feed-image-1.png" class="post-img">
+  
+                  <div class="post-row"> 
+                    <div class="activity-icon"> 
+                        <div><img src="./socialbook_img/like-blue.png" >120</div>  
+                        <div><img src="./socialbook_img/comments.png" >36</div>   
+                        <div><img src="./socialbook_img/share.png" >3</div>   
+                    </div> 
+                    <div class="post-profile-icon"> 
+                        <img src="./socialbook_img/member-7.png" >
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div> 
+                  </div>  
+
+              </div> 
+              <div class="post-container">
+                <div class="post-row">
+                  <div class="user-profile">
+                    <img src="./socialbook_img/member-8.png" alt="">
+                    <div> 
+                      <p>Ratnesh Maurya <span>is Feeling sad </p>
+                      <span>3 Jul 2022 at 15:27</span>
+                    </div>
+                  </div>
+                  <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                  <img src="./socialbook_img/feed-image-3.png" class="post-img">
+  
+                  <div class="post-row"> 
+                    <div class="activity-icon"> 
+                        <div><img src="./socialbook_img/like-blue.png" >368</div>  
+                        <div><img src="./socialbook_img/comments.png" >145</div>   
+                        <div><img src="./socialbook_img/share.png" >76</div>   
+                    </div> 
+                    <div class="post-profile-icon"> 
+                        <img src="./socialbook_img/member-8.png" >
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div> 
+                  </div>  
+
+              </div> 
+              <div class="post-container">
+                <div class="post-row">
+                  <div class="user-profile">
+                    <img src="./socialbook_img/member-9.png" alt="">
+                    <div>  
+                      <p>Cool boy Ramesh <span>is Feeling Lonely </span></p>
+                      <span>20min ago</span>
+                    </div>
+                  </div>
+                  <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                  <img src="./socialbook_img/feed-image-4.png" class="post-img">
+  
+                  <div class="post-row"> 
+                    <div class="activity-icon"> 
+                        <div><img src="./socialbook_img/like-blue.png" >3</div>  
+                        <div><img src="./socialbook_img/comments.png" ></div>   
+                        <div><img src="./socialbook_img/share.png" ></div>   
+                    </div> 
+                    <div class="post-profile-icon"> 
+                        <img src="./socialbook_img/member-9.png" >
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div> 
+                  </div>  
+
+              </div> 
+             
+              <button type="button" class="load-more">Load More</button>
+            </div>
+
+          <!-- right-sidebar -->
+
+            <div class="right-sidebar">
+               
+              <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+              </div>
+
+              <div class="events">
+                <div class="left-event"> <!-- for date --->
+                  <h3>18</h3>
+                  <span>Mar</span>
+                </div>
+                <div class="right-event">  <!-- for address -->  
+                  <h4>Katta Vyapar</h4>
+                
+                  <p>   <i class="fa-solid fa-location-pin"></i> Kalin Bhaiya Elaka</p>
+                  <a href="">More Info</a>
+                </div>
+              </div>
+              <div class="events">
+                <div class="left-event"> <!-- for date --->
+                  <h3>29</h3>
+                  <span>Feb</span>
+                </div>
+                <div class="right-event">  <!-- for address -->  
+                  <h4>Gun Factory</h4>
+                  <p>   <i class="fa-solid fa-location-pin"></i> sector-13 Greater noida</p>
+                  <a href="">More Info</a>
+                </div>
+              </div>
+
+              <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+              </div>
+              <img src="./socialbook_img/advertisement.png" class="sidebar-ads">
+              
+              <div class="sidebar-title">
+                <h4>Converation</h4>
+                <a href="#">Hide Chat</a>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                  <img src="./socialbook_img/member-1.png" >
+                </div>
+                <p> Dhanno Singhaniya</p>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                  <img src="./socialbook_img/member-2.png" >
+                </div>
+                <p>Shamba Shekhavat</p>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                  <img src="./socialbook_img/member-3.png" >
+                </div>
+                <p> Mahira Khandal</p>
+              </div>
+            </div> <!--right side baar closing here-->
+            
+        </div>
+    <div class="footer">
+      <p>&copy 2022 A K V. All Right Reserved</p>
+    </div>
+    <script src="fb_clone.js"></script>
+</body>
+</html>
